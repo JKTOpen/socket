@@ -16,15 +16,6 @@ MeanSocket.register(function(app, auth, database) {
     //We enable routing. By default the Package Object is passed to the routes
     MeanSocket.routes(app, auth, database);
 
-    //We are adding a link to the main menu for all authenticated users
-    MeanSocket.menus.add({
-        title: 'Mean socket help page',
-        link: 'Mean socket help page',
-        roles: ['authenticated'],
-        menu: 'main'
-    });
-
-
     // //Uncomment to use. Requires meanio@0.3.7 or above
     // // Save settings with callback
     // // Use this for saving data from administration pages
